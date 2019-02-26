@@ -12,19 +12,19 @@
     <title>Back to basics :: Strugging Grad Students&#39;s Savior</title>
 
     
-    <link href="/savior/css/nucleus.css?1551223753" rel="stylesheet">
-    <link href="/savior/css/fontawesome-all.min.css?1551223753" rel="stylesheet">
-    <link href="/savior/css/hybrid.css?1551223753" rel="stylesheet">
-    <link href="/savior/css/featherlight.min.css?1551223753" rel="stylesheet">
-    <link href="/savior/css/perfect-scrollbar.min.css?1551223753" rel="stylesheet">
-    <link href="/savior/css/auto-complete.css?1551223753" rel="stylesheet">
-    <link href="/savior/css/theme.css?1551223753" rel="stylesheet">
-    <link href="/savior/css/hugo-theme.css?1551223753" rel="stylesheet">
+    <link href="/savior/css/nucleus.css?1551224204" rel="stylesheet">
+    <link href="/savior/css/fontawesome-all.min.css?1551224204" rel="stylesheet">
+    <link href="/savior/css/hybrid.css?1551224204" rel="stylesheet">
+    <link href="/savior/css/featherlight.min.css?1551224204" rel="stylesheet">
+    <link href="/savior/css/perfect-scrollbar.min.css?1551224204" rel="stylesheet">
+    <link href="/savior/css/auto-complete.css?1551224204" rel="stylesheet">
+    <link href="/savior/css/theme.css?1551224204" rel="stylesheet">
+    <link href="/savior/css/hugo-theme.css?1551224204" rel="stylesheet">
     
-      <link href="/savior/css/theme-red.css?1551223753" rel="stylesheet">
+      <link href="/savior/css/theme-red.css?1551224204" rel="stylesheet">
     
 
-    <script src="/savior/js/jquery-2.x.min.js?1551223753"></script>
+    <script src="/savior/js/jquery-2.x.min.js?1551224204"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/savior/js/lunr.min.js?1551223753"></script>
-<script type="text/javascript" src="/savior/js/auto-complete.js?1551223753"></script>
+<script type="text/javascript" src="/savior/js/lunr.min.js?1551224204"></script>
+<script type="text/javascript" src="/savior/js/auto-complete.js?1551224204"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/strugglinggs.github.io\/savior\/";
     
 </script>
-<script type="text/javascript" src="/savior/js/search.js?1551223753"></script>
+<script type="text/javascript" src="/savior/js/search.js?1551224204"></script>
 
     
   </div>
@@ -337,7 +337,17 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#how-to-submit-the-scil-qa-nextflow">How to submit the SCIL_QA NextFlow</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -355,10 +365,27 @@
         
 
 
+
+
 <p>For the newbies in my lab  😅</p>
 
 <pre><code>ssh username@cedar.computecanada.ca
 lol @ tis jk
+</code></pre>
+
+<h3 id="how-to-submit-the-scil-qa-nextflow">How to submit the SCIL_QA NextFlow</h3>
+
+<pre><code class="language-bash">#!/bin/bash
+
+#SBATCH --account=YOURACCOUNT
+#SBATCH --time=2:00:00
+#SBATCH --job-name=WTVUWANT_QA
+#SBATCH --output=WTVUWANTqa-%A.out
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=32
+#SBATCH --mem=0
+
+nextflow -c ../singularity.conf run /PATHTOTHENEXTFLOWQA/scil_qa/qa_nf/main.nf --root /PATHOFTHERESULTSTOBEQA/ -with-singularity /PATHTOYOURQAIMG/src/scil_qa/qa.img
 </code></pre>
 
 
@@ -527,20 +554,20 @@ lol @ tis jk
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/savior/js/clipboard.min.js?1551223753"></script>
-    <script src="/savior/js/perfect-scrollbar.min.js?1551223753"></script>
-    <script src="/savior/js/perfect-scrollbar.jquery.min.js?1551223753"></script>
-    <script src="/savior/js/jquery.sticky.js?1551223753"></script>
-    <script src="/savior/js/featherlight.min.js?1551223753"></script>
-    <script src="/savior/js/html5shiv-printshiv.min.js?1551223753"></script>
-    <script src="/savior/js/highlight.pack.js?1551223753"></script>
+    <script src="/savior/js/clipboard.min.js?1551224204"></script>
+    <script src="/savior/js/perfect-scrollbar.min.js?1551224204"></script>
+    <script src="/savior/js/perfect-scrollbar.jquery.min.js?1551224204"></script>
+    <script src="/savior/js/jquery.sticky.js?1551224204"></script>
+    <script src="/savior/js/featherlight.min.js?1551224204"></script>
+    <script src="/savior/js/html5shiv-printshiv.min.js?1551224204"></script>
+    <script src="/savior/js/highlight.pack.js?1551224204"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/savior/js/modernizr.custom.71422.js?1551223753"></script>
-    <script src="/savior/js/learn.js?1551223753"></script>
-    <script src="/savior/js/hugo-learn.js?1551223753"></script>
+    <script src="/savior/js/modernizr.custom.71422.js?1551224204"></script>
+    <script src="/savior/js/learn.js?1551224204"></script>
+    <script src="/savior/js/hugo-learn.js?1551224204"></script>
 
-    <link href="/savior/mermaid/mermaid.css?1551223753" type="text/css" rel="stylesheet" />
-    <script src="/savior/mermaid/mermaid.js?1551223753"></script>
+    <link href="/savior/mermaid/mermaid.css?1551224204" type="text/css" rel="stylesheet" />
+    <script src="/savior/mermaid/mermaid.js?1551224204"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

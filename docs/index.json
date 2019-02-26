@@ -4,7 +4,7 @@
 	"title": "Back to basics",
 	"tags": [],
 	"description": "",
-	"content": "For the newbies in my lab 😅\nssh username@cedar.computecanada.ca lol @ tis jk  "
+	"content": " For the newbies in my lab 😅\nssh username@cedar.computecanada.ca lol @ tis jk  How to submit the SCIL_QA NextFlow #!/bin/bash #SBATCH --account=YOURACCOUNT #SBATCH --time=2:00:00 #SBATCH --job-name=WTVUWANT_QA #SBATCH --output=WTVUWANTqa-%A.out #SBATCH --nodes=1 #SBATCH --cpus-per-task=32 #SBATCH --mem=0 nextflow -c ../singularity.conf run /PATHTOTHENEXTFLOWQA/scil_qa/qa_nf/main.nf --root /PATHOFTHERESULTSTOBEQA/ -with-singularity /PATHTOYOURQAIMG/src/scil_qa/qa.img  "
 },
 {
 	"uri": "https://strugglinggs.github.io/savior/guide/",
