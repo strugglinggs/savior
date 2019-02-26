@@ -7,7 +7,7 @@ hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 # mv public/ to docs/
 rm -r ../docs
-mv -f /public ../docs
+mv public/ ../docs/
 
 # Go To Public folder
 cd ..
