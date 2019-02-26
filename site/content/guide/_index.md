@@ -10,4 +10,4 @@ pre = "<b>1. </b>"
 
 # How to use this guide
 
-![Magic](/guide/images/magic.gif?classes=shadow)
+![Magic](/savior/guide/images/magic.gif?classes=shadow)

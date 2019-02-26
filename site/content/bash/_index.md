@@ -10,6 +10,6 @@ pre = "<b></b>"
 
 # Tips & Tricks on Bash/Shell
 
-![Bash](/bash/meme3.jpeg?width=20pc)
-![Bash](/bash/meme.png?width=20pc)
-![Bash](/bash/meme2.jpg?width=20pc) 
+![Bash](/savior/bash/meme3.jpeg?width=20pc)
+![Bash](/savior/bash/meme.png?width=20pc)
+![Bash](/savior/bash/meme2.jpg?width=20pc) 

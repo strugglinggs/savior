@@ -8,4 +8,4 @@ Either search or browse this guide. Not built to be read in a linear fashion.
 
 In fact, this isn’t really a guide, but a bunch of notes put together to save us some time and frustration in the [near] future.
 
-![Magic](/guide/how-to-use/nobrainer.gif?classes=shadow)
+![Magic](/savior/guide/how-to-use/nobrainer.gif?classes=shadow)

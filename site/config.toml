@@ -1,4 +1,4 @@
-baseURL = "https://strugglinggsgithub.io/savior/"
+baseURL = "https://strugglinggs.github.io/savior/"
 languageCode = "en-us"
 title = "Strugging Grad Students's Savior"
 theme = "hugo-theme-learn"
@@ -38,3 +38,8 @@ home = [ "HTML", "RSS", "JSON"]
   ordersectionsby = "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "red"
+
+
+
+relativeURLS = true
+canonifyurls = true

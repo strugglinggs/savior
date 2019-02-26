@@ -6,9 +6,9 @@ title: "Struggling Graduate Students PhD's Savior"
 
 ## Main features
 
-![Help](/help.jpg?width=25pc&classes=shadow)
-![Help](/help_cod.jpg?width=25pc&classes=shadow)
-![Help](/code-review.jpg?width=25pc&classes=shadow)
+![Help](/savior/images/help.jpg?width=25pc&classes=shadow)
+![Help](/savior/images/help_cod.jpg?width=25pc&classes=shadow)
+![Help](/savior/images/code-review.jpg?width=25pc&classes=shadow)
 
 
 ## Contribute to this documentation

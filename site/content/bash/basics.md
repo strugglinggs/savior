@@ -4,7 +4,7 @@ date = 2019-02-26T13:03:26-05:00
 weight = 2
 enableEmoji = true
 +++
-![Forgetful](/bash/forget.gif?classes=shadow)
+![Forgetful](/savior/bash/forget.gif?classes=shadow)
 
 ### Resources and small bash scripts
 

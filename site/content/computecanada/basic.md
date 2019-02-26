@@ -10,6 +10,7 @@ For the newbies in my lab  :sweat_smile:
 
 ```
 ssh username@cedar.computecanada.ca
+lol @ tis jk
 ```
 
 

@@ -9,4 +9,4 @@ pre = "<b></b>"
 ### Save my life plz
 
 # Compute Canada Notes
-![backup](/computecanada/backup.jpg?classes=shadow)
+![backup](/savior/computecanada/backup.jpg?classes=shadow)
