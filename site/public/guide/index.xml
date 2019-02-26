@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Guide&#39;s Guide on Strugging Grad Students&#39;s Savior</title>
-    <link>https://strugglinggsgithub.io/savior/guide/</link>
+    <link>https://strugglinggs.github.io/savior/guide/</link>
     <description>Recent content in Guide&#39;s Guide on Strugging Grad Students&#39;s Savior</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Feb 2019 13:03:26 -0500</lastBuildDate>
     
-	<atom:link href="https://strugglinggsgithub.io/savior/guide/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://strugglinggs.github.io/savior/guide/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
