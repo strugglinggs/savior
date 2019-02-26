@@ -6,7 +6,8 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 # mv public/ to docs/
-mv -rf /public ../docs
+rm -r ../docs
+mv -f /public ../docs
 
 # Go To Public folder
 cd ..
