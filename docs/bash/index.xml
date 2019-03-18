@@ -17,8 +17,42 @@
       <pubDate>Tue, 26 Feb 2019 13:03:26 -0500</pubDate>
       
       <guid>https://strugglinggs.github.io/savior/bash/basics/</guid>
-      <description> Resources and small bash scripts This page is a collection of resources and notes we&amp;rsquo;ve taken here and there.
- cd  </description>
+      <description>This page is a collection of resources and notes we&amp;rsquo;ve taken over the years.
+ Check if direction is empty if [ -z &amp;quot;$(ls -A /path/to/dir)&amp;quot; ]; then echo &amp;quot;Empty&amp;quot; else echo &amp;quot;Not Empty&amp;quot; fi  change spaces in filename to _ for file in *; do mv &amp;quot;$file&amp;quot; `echo $file | tr &#39; &#39; &#39;_&#39;` ; done  change spaces in filename to _ with awk mv &amp;quot;$file&amp;quot; `echo $file | awk &#39;{gsub(/&amp;gt;&amp;gt;/,&amp;quot;_&amp;quot;)} 1&#39;`  i can&amp;rsquo;t remember exactly what this was for but i was renaming files and trying to get rid of extra text at the end of the name (hence the rev(ersing) to and from) base_orig=`echo $j | cut -d &amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Python Basics</title>
+      <link>https://strugglinggs.github.io/savior/bash/python/</link>
+      <pubDate>Tue, 26 Feb 2019 13:03:26 -0500</pubDate>
+      
+      <guid>https://strugglinggs.github.io/savior/bash/python/</guid>
+      <description>This page is a collection of resources and notes we&amp;rsquo;ve taken over the years.
+ GITHUB YOU HAVE TO CREATE A NEW REPO ON GITHUB FIRST!! can only push to repos that exist already and have an &amp;ldquo;origin&amp;rdquo; (I think this isnt true anymore / Always been possible on GitLab (see the official guide here)
+ This can be done by using either SSH or HTTPS:
+make repo on github git remote add origin &amp;lt;link to online repo&amp;gt; git push -u origin master (send this to specific branch (master) of specific repo (origin)) git checkout -b &amp;lt;name&amp;gt; creates a branch git remote remove origin (so that origin doesn&#39;t point to multiple things) git clone url.</description>
+    </item>
+    
+    <item>
+      <title>Git &amp; GitHub/GitLab Basics</title>
+      <link>https://strugglinggs.github.io/savior/bash/basics.git/</link>
+      <pubDate>Tue, 26 Feb 2019 13:03:26 -0500</pubDate>
+      
+      <guid>https://strugglinggs.github.io/savior/bash/basics.git/</guid>
+      <description>This page is a collection of resources and notes we&amp;rsquo;ve taken over the years.
+ GITHUB YOU HAVE TO CREATE A NEW REPO ON GITHUB FIRST!! can only push to repos that exist already and have an &amp;ldquo;origin&amp;rdquo; (I think this isnt true anymore / Always been possible on GitLab (see the official guide here)
+ This can be done by using either SSH or HTTPS:
+make repo on github git remote add origin &amp;lt;link to online repo&amp;gt; git push -u origin master (send this to specific branch (master) of specific repo (origin)) git checkout -b &amp;lt;name&amp;gt; creates a branch git remote remove origin (so that origin doesn&#39;t point to multiple things) git clone url.</description>
+    </item>
+    
+    <item>
+      <title>Screen Basics</title>
+      <link>https://strugglinggs.github.io/savior/bash/basics.screen/</link>
+      <pubDate>Tue, 26 Feb 2019 13:03:26 -0500</pubDate>
+      
+      <guid>https://strugglinggs.github.io/savior/bash/basics.screen/</guid>
+      <description>This page is a collection of resources and notes we&amp;rsquo;ve taken over the years.
+ SCREEN screen = creates new session screen -S name_of_session (start a screen session with specific name) ctrl + A + D = detaches screen screen -r = reattaches if there&amp;rsquo;s just one (i think) screen -r #### (enough to be uniq) = reattaches specific screen screen -list or -ls (shows which screens are running screen -dr (detach and reattach)</description>
     </item>
     
   </channel>

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/savior/images/favicon.png" type="image/png">
 
-    <title>Guide&#39;s Guide :: Strugging Grad Students&#39;s Savior</title>
+    <title>Screen Basics :: Strugging Grad Students&#39;s Savior</title>
 
     
     <link href="/savior/css/nucleus.css?1552942853" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/savior/guide/">
+  <body class="" data-url="/savior/bash/basics.screen/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -79,8 +79,8 @@
   
     
     <li data-nav-id="/savior/guide/" title="Guide&#39;s Guide" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/savior/guide/">
@@ -167,7 +167,7 @@
   
     
     <li data-nav-id="/savior/bash/" title="Bash Tips &amp; Tricks" class="dd-item 
-        
+        parent
         
         
         ">
@@ -250,7 +250,7 @@
  
   
     
-      <li data-nav-id="/savior/bash/basics.screen/" title="Screen Basics" class="dd-item ">
+      <li data-nav-id="/savior/bash/basics.screen/" title="Screen Basics" class="dd-item active">
         <a href="/savior/bash/basics.screen/">
         Screen Basics
         <i class="fas fa-check read-icon"></i>
@@ -420,7 +420,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/strugglinggs/savior/docs/content/guide/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/strugglinggs/savior/docs/content/bash/basics.screen.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -435,22 +435,38 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
-                   Guide&#39;s Guide 
+                   Screen Basics 
                  
                   </span>
                 </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#screen">SCREEN</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
                 
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Screen Basics</h1>
           
 
         
@@ -458,19 +474,29 @@
 
 
 
-<h3 id="guide-on-how-to-use-this-guide">Guide on how to use this Guide</h3>
+<div class="notices info" ><p>This page is a collection of resources and notes we&rsquo;ve taken over the years.</p>
+</div>
 
-<h1 id="how-to-use-this-guide">How to use this guide</h1>
 
-<p><img src="/savior/guide/images/magic.gif?classes=shadow" alt="Magic" /></p>
+<h2 id="screen">SCREEN</h2>
+
+<p><code>screen</code> = creates new session
+<code>screen -S name_of_session</code> (start a screen session with specific name)
+<code>ctrl + A + D</code> = detaches screen
+<code>screen -r</code> = reattaches if there&rsquo;s just one (i think)
+<code>screen -r ####</code> (enough to be uniq) = reattaches specific screen
+<code>screen -list</code> or -ls (shows which screens are running
+<code>screen -dr</code> (detach and reattach)</p>
+
+<p>launch screen from remote server!!!! ie ssh into workstation (which won&rsquo;t log off) and then ssh into remote server (compute canada) from there
+(a little more detailed info wouldnt hurt)</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -502,6 +528,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -517,9 +545,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -556,6 +581,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -569,21 +595,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -628,6 +641,23 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -635,6 +665,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -739,3 +772,4 @@
 </script>
   </body>
 </html>
+

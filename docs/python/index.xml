@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Strugging Grad Students&#39;s Savior</title>
+    <link>https://strugglinggs.github.io/savior/python/</link>
+    <description>Recent content in Python on Strugging Grad Students&#39;s Savior</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Feb 2019 13:03:26 -0500</lastBuildDate>
+    
+	<atom:link href="https://strugglinggs.github.io/savior/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Basics</title>
+      <link>https://strugglinggs.github.io/savior/python/python/</link>
+      <pubDate>Tue, 26 Feb 2019 13:03:26 -0500</pubDate>
+      
+      <guid>https://strugglinggs.github.io/savior/python/python/</guid>
+      <description>#PYTHON
+check if var in var (python) {x for x in a if x==x}  to save csv without index column df.to_csv(&#39;/path/to/csv/file&#39;,index=False)  when making an env and you want a specific list of stuff installed pip install -r requirements.txt  change column in dataframe from string to integer (python) df.loc[:,&#39;gender&#39;] = df.gender.astype(int)  these are notes i took to remind me how to flip my fmri volumes which were ordered A-P,P-A,A-P,P-A,etc load an MRI with nibabel (python) vol = nibabel.</description>
+    </item>
+    
+  </channel>
+</rss>

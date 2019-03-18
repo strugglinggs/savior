@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/savior/images/favicon.png" type="image/png">
 
-    <title>Guide&#39;s Guide :: Strugging Grad Students&#39;s Savior</title>
+    <title>Python Basics :: Strugging Grad Students&#39;s Savior</title>
 
     
     <link href="/savior/css/nucleus.css?1552942853" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/savior/guide/">
+  <body class="" data-url="/savior/python/python/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -79,8 +79,8 @@
   
     
     <li data-nav-id="/savior/guide/" title="Guide&#39;s Guide" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/savior/guide/">
@@ -330,7 +330,7 @@
   
     
     <li data-nav-id="/savior/python/" title="Python" class="dd-item 
-        
+        parent
         
         
         ">
@@ -356,7 +356,7 @@
  
   
     
-      <li data-nav-id="/savior/python/python/" title="Python Basics" class="dd-item ">
+      <li data-nav-id="/savior/python/python/" title="Python Basics" class="dd-item active">
         <a href="/savior/python/python/">
         Python Basics
         <i class="fas fa-check read-icon"></i>
@@ -420,7 +420,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/strugglinggs/savior/docs/content/guide/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/strugglinggs/savior/docs/content/python/python.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -435,22 +435,50 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
-                   Guide&#39;s Guide 
+                   Python Basics 
                  
                   </span>
                 </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#check-if-var-in-var-python">check if var in var (python)</a></li>
+<li><a href="#to-save-csv-without-index-column">to save csv without index column</a></li>
+<li><a href="#when-making-an-env-and-you-want-a-specific-list-of-stuff-installed">when making an env and you want a specific list of stuff installed</a></li>
+<li><a href="#change-column-in-dataframe-from-string-to-integer-python">change column in dataframe from string to integer (python)</a></li>
+<li><a href="#these-are-notes-i-took-to-remind-me-how-to-flip-my-fmri-volumes-which-were-ordered-a-p-p-a-a-p-p-a-etc">these are notes i took to remind me how to flip my fmri volumes which were ordered A-P,P-A,A-P,P-A,etc</a></li>
+<li><a href="#load-an-mri-with-nibabel-python">load an MRI with nibabel (python)</a></li>
+<li><a href="#extract-image-data">extract image data</a></li>
+<li><a href="#flip-every-other-volume-1-2-means-from-vol-1-to-end-and-every-2nd-vol">flip every other volume (1::2 means from vol 1 to end, and every 2nd vol)</a></li>
+<li><a href="#make-new-image-from-data">make new image from data</a></li>
+<li><a href="#save-new-image">save new image</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
                 
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Python Basics</h1>
           
 
         
@@ -458,19 +486,61 @@
 
 
 
-<h3 id="guide-on-how-to-use-this-guide">Guide on how to use this Guide</h3>
+<p>#PYTHON</p>
 
-<h1 id="how-to-use-this-guide">How to use this guide</h1>
+<h3 id="check-if-var-in-var-python">check if var in var (python)</h3>
 
-<p><img src="/savior/guide/images/magic.gif?classes=shadow" alt="Magic" /></p>
+<pre><code class="language-python">{x for x in a if x==x}
+</code></pre>
+
+<h3 id="to-save-csv-without-index-column">to save csv without index column</h3>
+
+<pre><code class="language-python">df.to_csv('/path/to/csv/file',index=False)
+</code></pre>
+
+<h3 id="when-making-an-env-and-you-want-a-specific-list-of-stuff-installed">when making an env and you want a specific list of stuff installed</h3>
+
+<pre><code class="language-python">pip install -r requirements.txt
+</code></pre>
+
+<h3 id="change-column-in-dataframe-from-string-to-integer-python">change column in dataframe from string to integer (python)</h3>
+
+<pre><code class="language-python">df.loc[:,'gender'] = df.gender.astype(int)
+</code></pre>
+
+<h3 id="these-are-notes-i-took-to-remind-me-how-to-flip-my-fmri-volumes-which-were-ordered-a-p-p-a-a-p-p-a-etc">these are notes i took to remind me how to flip my fmri volumes which were ordered A-P,P-A,A-P,P-A,etc</h3>
+
+<h3 id="load-an-mri-with-nibabel-python">load an MRI with nibabel (python)</h3>
+
+<pre><code class="language-python">vol = nibabel.load('P0342_000_01_(opt)_fMRI_MANUAL_PRESCAN_20100731152203_10.nii.gz')
+</code></pre>
+
+<h3 id="extract-image-data">extract image data</h3>
+
+<pre><code class="language-python">data = vol.get_data()
+</code></pre>
+
+<h3 id="flip-every-other-volume-1-2-means-from-vol-1-to-end-and-every-2nd-vol">flip every other volume (1::2 means from vol 1 to end, and every 2nd vol)</h3>
+
+<pre><code class="language-python">data[...,1::2] = (data[...,1::2])[:,::-1]
+</code></pre>
+
+<h3 id="make-new-image-from-data">make new image from data</h3>
+
+<pre><code class="language-python">img = nibabel.Nifti1Image(data, vol.affine, header=vol.header)
+</code></pre>
+
+<h3 id="save-new-image">save new image</h3>
+
+<pre><code class="language-python">nibabel.save(img,'test2.nii.gz')
+</code></pre>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -502,6 +572,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -517,9 +589,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -668,6 +737,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -680,6 +750,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -739,3 +810,4 @@
 </script>
   </body>
 </html>
+

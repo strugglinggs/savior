@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/savior/images/favicon.png" type="image/png">
 
-    <title>Guide&#39;s Guide :: Strugging Grad Students&#39;s Savior</title>
+    <title>Git &amp; GitHub/GitLab Basics :: Strugging Grad Students&#39;s Savior</title>
 
     
     <link href="/savior/css/nucleus.css?1552942853" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/savior/guide/">
+  <body class="" data-url="/savior/bash/basics.git/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -79,8 +79,8 @@
   
     
     <li data-nav-id="/savior/guide/" title="Guide&#39;s Guide" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/savior/guide/">
@@ -167,7 +167,7 @@
   
     
     <li data-nav-id="/savior/bash/" title="Bash Tips &amp; Tricks" class="dd-item 
-        
+        parent
         
         
         ">
@@ -231,7 +231,7 @@
  
   
     
-      <li data-nav-id="/savior/bash/basics.git/" title="Git &amp; GitHub/GitLab Basics" class="dd-item ">
+      <li data-nav-id="/savior/bash/basics.git/" title="Git &amp; GitHub/GitLab Basics" class="dd-item active">
         <a href="/savior/bash/basics.git/">
         Git &amp; GitHub/GitLab Basics
         <i class="fas fa-check read-icon"></i>
@@ -420,7 +420,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/strugglinggs/savior/docs/content/guide/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/strugglinggs/savior/docs/content/bash/basics.git.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -435,22 +435,42 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
-                   Guide&#39;s Guide 
+                   Git &amp; GitHub/GitLab Basics 
                  
                   </span>
                 </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#github">GITHUB</a></li>
+<li><a href="#gitlab">GitLab</a>
+<ul>
+<li><a href="#to-create-a-repo-from-local-machine">To create a repo from local machine</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
                 
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Git &amp; GitHub/GitLab Basics</h1>
           
 
         
@@ -458,19 +478,75 @@
 
 
 
-<h3 id="guide-on-how-to-use-this-guide">Guide on how to use this Guide</h3>
+<p><div class="notices info" ><p>This page is a collection of resources and notes we&rsquo;ve taken over the years.</p>
+</div>
 
-<h1 id="how-to-use-this-guide">How to use this guide</h1>
+<img src="/savior/bash/forget.gif?classes=shadow" alt="Forgetful" /></p>
 
-<p><img src="/savior/guide/images/magic.gif?classes=shadow" alt="Magic" /></p>
+<h2 id="github">GITHUB</h2>
+
+<div class="notices warning" ><p>YOU HAVE TO CREATE A NEW REPO ON GITHUB FIRST!! can only push to repos that exist already and have an &ldquo;origin&rdquo; (I think this isnt true anymore / Always been possible on GitLab (see the official guide <a href="https://docs.gitlab.com/ee/gitlab-basics/create-project.html">here</a>)</p>
+</div>
+
+
+<p>This can be done by using either SSH or HTTPS:</p>
+
+<pre><code>make repo on github
+git remote add origin &lt;link to online repo&gt;
+git push -u origin master (send this to specific branch (master) of specific repo (origin))
+git checkout -b &lt;name&gt; creates a branch
+
+git remote remove origin (so that origin doesn't point to multiple things)
+
+git clone url.to.git.repo
+to move stuff within git repo: git mv thing1 thing2
+to remove stuff: git rm thing
+
+git status (tells you what was done to a repo)
+
+git pull (get the most recent copy from remote repo (url))
+git commit path.to.files or -a for all files -m 'commit message' (commit = save)
+git status (just to check)
+git pull (to make sure nothing online has changed since you changed stuff)
+git push (upload/distribute to remote repo)
+
+git checkout -b nameofbranch (creates branch)
+
+git log --oneline
+
+git remote -v
+</code></pre>
+
+<p>git will automatically ignore empty directories so put something in them to be noticeable! ie touch dir/empty</p>
+
+<p>pushes will fail if conflicts in remote repo
+so always git pull; git push</p>
+
+<p>put stuff in .gitignore that you don&rsquo;t want to share to repo and so that it never gets updated to repo</p>
+
+<p>.md = markdown file (same as jupyter notebook or dropbox paper editing language)</p>
+
+<h2 id="gitlab">GitLab</h2>
+
+<h3 id="to-create-a-repo-from-local-machine">To create a repo from local machine</h3>
+
+<blockquote>
+<p>When you create a new repo locally, instead of going to GitLab to manually create a new project and then push the repo, you can directly push it to GitLab to create the new project,  all without leaving your terminal. If you have access to that namespace, we will automatically create a new project under that GitLab namespace with its visibility set to Private by default (you can later change it in the project’s settings).</p>
+</blockquote>
+
+<pre><code class="language-bash">## Git push using SSH
+git push --set-upstream git@gitlab.com:namespace/nonexistent-project.git master
+
+## Git push using HTTPS
+git push --set-upstream https://gitlab.com/namespace/nonexistent-project.git master
+</code></pre>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -502,6 +578,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -509,6 +587,55 @@
                     
                     
                         
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
                     
                     
 
@@ -548,26 +675,11 @@
             
         
                     
-            
-        
-                    
                         
             
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -585,37 +697,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -739,3 +822,4 @@
 </script>
   </body>
 </html>
+
