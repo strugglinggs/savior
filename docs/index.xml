@@ -72,7 +72,12 @@ make repo on github git remote add origin &amp;lt;link to online repo&amp;gt; gi
       
       <guid>https://strugglinggs.github.io/savior/bash/basics.screen/</guid>
       <description>This page is a collection of resources and notes we&amp;rsquo;ve taken over the years.
- SCREEN screen = creates new session screen -S name_of_session (start a screen session with specific name) ctrl + A + D = detaches screen screen -r = reattaches if there&amp;rsquo;s just one (i think) screen -r #### (enough to be uniq) = reattaches specific screen screen -list or -ls (shows which screens are running screen -dr (detach and reattach)</description>
+ SCREEN screen = creates new session
+screen -S name_of_session (start a screen session with specific name)
+ctrl + A + D = detaches screen
+screen -r = reattaches if there&amp;rsquo;s just one (i think)
+screen -r #### (enough to be uniq) = reattaches specific screen
+screen -list or -ls (shows which screens are running</description>
     </item>
     
   </channel>

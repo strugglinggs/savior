@@ -81,7 +81,7 @@
 	"title": "Screen Basics",
 	"tags": [],
 	"description": "",
-	"content": " This page is a collection of resources and notes we\u0026rsquo;ve taken over the years.\n SCREEN screen = creates new session screen -S name_of_session (start a screen session with specific name) ctrl + A + D = detaches screen screen -r = reattaches if there\u0026rsquo;s just one (i think) screen -r #### (enough to be uniq) = reattaches specific screen screen -list or -ls (shows which screens are running screen -dr (detach and reattach)\nlaunch screen from remote server!!!! ie ssh into workstation (which won\u0026rsquo;t log off) and then ssh into remote server (compute canada) from there (a little more detailed info wouldnt hurt)\n"
+	"content": " This page is a collection of resources and notes we\u0026rsquo;ve taken over the years.\n SCREEN screen = creates new session\nscreen -S name_of_session (start a screen session with specific name)\nctrl + A + D = detaches screen\nscreen -r = reattaches if there\u0026rsquo;s just one (i think)\nscreen -r #### (enough to be uniq) = reattaches specific screen\nscreen -list or -ls (shows which screens are running\nscreen -dr (detach and reattach)\nlaunch screen from remote server!!!! ie ssh into workstation (which won\u0026rsquo;t log off) and then ssh into remote server (compute canada) from there (a little more detailed info wouldnt hurt)\n"
 },
 {
 	"uri": "https://strugglinggs.github.io/savior/categories/",

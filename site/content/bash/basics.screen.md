@@ -10,11 +10,17 @@ enableEmoji = true
 ## SCREEN
 
 `screen` = creates new session
+
 `screen -S name_of_session` (start a screen session with specific name)
+
 `ctrl + A + D` = detaches screen
+
 `screen -r` = reattaches if there's just one (i think)
+
 `screen -r ####` (enough to be uniq) = reattaches specific screen 
+
 `screen -list` or -ls (shows which screens are running
+
 `screen -dr` (detach and reattach)
 
 launch screen from remote server!!!! ie ssh into workstation (which won't log off) and then ssh into remote server (compute canada) from there
