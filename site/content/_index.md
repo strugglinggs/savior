@@ -4,7 +4,7 @@ title: "Struggling Graduate Students PhD's Savior"
 
 # Oh, our savior!
 
-## Main features
+## Take a deep breath & Smile :)
 
 ![Help](/savior/images/help.jpg?width=25pc&classes=shadow)
 ![Help](/savior/images/help_cod.jpg?width=25pc&classes=shadow)
